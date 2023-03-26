@@ -1,0 +1,43 @@
+.blog_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+  }
+  .single_blog{
+    width: 50vw;
+    margin: 10px;
+    padding: 10px;
+    border: 2px burlywood solid;
+  }
+  .blogH3{
+    cursor: pointer;
+    margin: 5px;
+  }
+  .blogH3:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+  .author{
+    text-align: end;
+    margin-top: 5px;
+    text-decoration: underline;
+  }
+  .details{
+    max-width: 60vw;
+    margin: 10px auto;
+  }
+  @media only screen and (max-width: 600px) {
+   .single_blog {
+       width: 90vw;
+       margin: 10px;
+    }
+  }
+@media only screen and (max-width: 100px) {
+   .single_blog {
+        width: 70vw;
+        margin: 10px;
+    }
+  }

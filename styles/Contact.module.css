@@ -1,0 +1,37 @@
+.container {
+    max-width: 45vw;
+    margin: auto;
+}
+.input_div{
+    margin: 10px 0;
+}
+.input_div input {
+    margin-left: 5px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+}
+.input_div textarea {
+    margin-left: 5px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+}
+.container button {
+    padding: 6px 10px;
+    font-size: 600;  
+    background-color: rgb(167, 167, 204);
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90vw;
+        margin: auto;
+    }
+  }
+@media only screen and (max-width: 100px) {
+    .container {
+        max-width: 70vw;
+        margin: auto;
+    }
+  }

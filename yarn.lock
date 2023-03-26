@@ -15,20 +15,20 @@ __metadata:
   linkType: hard
 
 "@eslint-community/eslint-utils@npm:^4.2.0":
-  version: 4.3.0
-  resolution: "@eslint-community/eslint-utils@npm:4.3.0"
+  version: 4.4.0
+  resolution: "@eslint-community/eslint-utils@npm:4.4.0"
   dependencies:
     eslint-visitor-keys: ^3.3.0
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
-  checksum: f487760a692f0f1fef76e248ad72976919576ba57edc2b1b1dc1d182553bae6b5bf7b078e654da85d04f0af8a485d20bd26280002768f4fbcd2e330078340cb0
+  checksum: cdfe3ae42b4f572cbfb46d20edafe6f36fc5fb52bf2d90875c58aefe226892b9677fef60820e2832caf864a326fe4fc225714c46e8389ccca04d5f9288aabd22
   languageName: node
   linkType: hard
 
 "@eslint-community/regexpp@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "@eslint-community/regexpp@npm:4.4.0"
-  checksum: 2d127af0c752b80e8a782eacfe996a86925d21de92da3ffc6f9e615e701145e44a62e26bdd88bfac2cd76779c39ba8d9875a91046ec5e7e5f23cb647c247ea6a
+  version: 4.4.1
+  resolution: "@eslint-community/regexpp@npm:4.4.1"
+  checksum: db97d8d08e784147b55ab0dda5892503c1a0eebad94d1c4646d89a94f02ca70b25f05d8e021fc05a075e7eb312e03e21f63d84f0b327719f8cf3bb64e66917cb
   languageName: node
   linkType: hard
 
@@ -1346,6 +1346,8 @@ __metadata:
     next: 13.2.4
     react: 18.2.0
     react-dom: 18.2.0
+    react-infinite-scroll-component: ^6.1.0
+    sweetalert2: ^11.7.3
   languageName: unknown
   linkType: soft
 
@@ -2196,6 +2198,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-infinite-scroll-component@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "react-infinite-scroll-component@npm:6.1.0"
+  dependencies:
+    throttle-debounce: ^2.1.0
+  peerDependencies:
+    react: ">=16.0.0"
+  checksum: 3708398934366df907dbad215247ebc1033221957ce7e32289ea31750cce70aa16513e2d03743e06c8b868ac7c542d12d5dbb6c830fd408433a4762f3cb5ecfb
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -2517,6 +2530,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sweetalert2@npm:^11.7.3":
+  version: 11.7.3
+  resolution: "sweetalert2@npm:11.7.3"
+  checksum: 6d31e6b0fb7fca21ed34c34be97d23043349d2f1c89005bf370245388b057926cf147c33301ced90ac2fe15bada7d3e4277073b5cc36e6c131a9a6f99525ff5a
+  languageName: node
+  linkType: hard
+
 "synckit@npm:^0.8.4":
   version: 0.8.5
   resolution: "synckit@npm:0.8.5"
@@ -2538,6 +2558,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"throttle-debounce@npm:^2.1.0":
+  version: 2.3.0
+  resolution: "throttle-debounce@npm:2.3.0"
+  checksum: 6d90aa2ddb294f8dad13d854a1cfcd88fdb757469669a096a7da10f515ee466857ac1e750649cb9da931165c6f36feb448318e7cb92570f0a3679d20e860a925
   languageName: node
   linkType: hard
 
