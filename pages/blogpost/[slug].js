@@ -14,23 +14,27 @@ const Slug = ({ blog }) => {
     );
 };
 export async function getStaticPaths() {
+    const blogFiles = await fs.promises.readdir(`blog_data`);
+    const paths = blogFiles.map(file => {
+        return {
+            params: {
+                slug: file.split('.')[0]
+            }
+        }
+    });
     return {
-        paths: [
-            { params: { slug: 'how-to-learn-flask' } },
-            { params: { slug: 'how-to-learn-javascript' } },
-            { params: { slug: 'how-to-learn-next-js' } },
-        ],
+        paths,
         fallback: false, // can also be true or 'blocking'
     }
 }
 export async function getStaticProps(context) {
     const { slug } = context.params;
     const blog = await fs.promises.readFile(`blog_data/${slug}.json`, 'utf-8');
-        return {
-            props: {
-                blog: JSON.parse(blog),
-            }
+    return {
+        props: {
+            blog: JSON.parse(blog),
         }
     }
+}
 
 export default Slug;
